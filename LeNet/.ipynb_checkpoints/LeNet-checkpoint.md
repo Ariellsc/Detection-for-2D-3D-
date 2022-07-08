@@ -2,13 +2,12 @@ LeNet doc url: https://axon.cs.byu.edu/~martinez/classes/678/Papers/Convolution_
 to Document Recognition》
 
 Prior Historical Knowledge：
-CNN's Development:
-\n1986年：Rumelhart and Hinton provided “Back Propagation” algorithm；
-\n1998年：LeCun use BP train LeNet network, which imply that the CNN is coming out;
-\n2006年：Hinton proposed the concept of "deep learning" in his science paper for the first time;
-\n2012年：Hinton‘s student Alex Krizhevsky create a deep learning model,and got the first place of ILSVRC2012.
+CNN's Development:  
+1986年：Rumelhart and Hinton provided “Back Propagation” algorithm；  
+1998年：LeCun use BP train LeNet network, which imply that the CNN is coming out;  
+2006年：Hinton proposed the concept of "deep learning" in his science paper for the first time;  
+2012年：Hinton‘s student Alex Krizhevsky create a deep learning model,and got the first place of ILSVRC2012.  
 
-CNN Basis：
-Fully Connected Layer：
-
- ![image](https://github.com/Ariellsc/Vision-Classification/tree/main/LeNet/material_img/fc.jpg)
+CNN Basis：  
+Fully Connected Layer：  
+![RUNOOB 图标](https://github.com/Ariellsc/Vision-Classification/tree/main/LeNet/material_img/fc.jpg)  

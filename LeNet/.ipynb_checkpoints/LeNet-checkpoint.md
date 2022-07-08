@@ -10,3 +10,4 @@ CNN's Development:
 
 CNN Basis：
 Fully Connected Layer：
+![image](https://github.com/Ariellsc/Vision-Classification/tree/main/LeNet/material_img/fc.jpg)

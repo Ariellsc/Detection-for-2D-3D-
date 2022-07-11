@@ -13,6 +13,8 @@ Fully Connected Layer：
 ![Fully Connected Layer Image](https://github.com/Ariellsc/Vision-Classification/tree/main/material_img/fc.jpg)   
 Back Propagation algorithm including 信号的前向传播和误差的反向传播两个过程:  
 ![network](https://github.com/Ariellsc/Vision-Classification/tree/main/material_img/network.jpg)  
+
+
 CNN中独特的网络结构---卷积层：  
 卷积特性：拥有局部感知机制（因为滑动窗口依局部滑动）；权值共享（因为滑动计算过程中，卷积核的矩阵值是不会发生变化的）。  
 对于权值共享，举例理解：
@@ -23,6 +25,7 @@ CNN中独特的网络结构---卷积层：
 之后第二层卷积操作：第二个卷积核卷积结束，计算过程一样，将其与上一个卷积结果进行拼接。就得到了整个输出的特征矩阵。
 总结一下就是：卷积核channel与输入特征层的channel相同；输出的特征矩阵channel与卷积核个数相同。  
 
+
 问题：  
 加上偏移量bias该如何计算呢？很简单，直接具体通道矩阵中对应位置按值加入该激活函数即可。  
 加上激活函数该如何计算呢？review一下简单的activation functions:  
@@ -31,6 +34,7 @@ CNN中独特的网络结构---卷积层：
 卷积操作过程中，矩阵经卷积操作后的尺寸由以下几个因数决定：输入图片的大小W x W；Filter大小F x F；步长S；padding的像素数P。  
 卷积后矩阵尺寸大小计算公式： 
 N = （W - F + 2P）/ S + 1  
+
 
 池化层：
 目的：对特征图进行稀疏处理，减少数据运算量。  

@@ -18,7 +18,7 @@ Back Propagation algorithm including 信号的前向传播和误差的反向传�
 CNN中独特的网络结构---卷积层：  
 卷积特性：拥有局部感知机制（因为滑动窗口依局部滑动）；权值共享（因为滑动计算过程中，卷积核的矩阵值是不会发生变化的）。  
 对于权值共享，举例理解：
-![network](https://github.com/Ariellsc/Vision-Classification/tree/main/material_img/weight_shared.jpg)   
+![weight_shared](https://github.com/Ariellsc/Vision-Classification/tree/main/material_img/weight_shared.jpg)   
 由于一张图片一般是3通道，那么每一个卷积核通道数量也要对应通道数量，如下图：  
 ![three_channel_conv](https://github.com/Ariellsc/Vision-Classification/tree/main/material_img/three_channel_conv.jpg)  
 假设共有两层卷积操作，对于第一层卷积操作：每个通道在图片中的对应位置，卷积之后，相加，得到这一个卷积核在这一个位置上卷积后的值，如图中黄色矩阵左上角的“1”，为三个通道卷积后的值相加，具体的：1+0+0  

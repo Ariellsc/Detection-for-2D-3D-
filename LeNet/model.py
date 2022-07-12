@@ -3,6 +3,9 @@ import torch.nn.functional as F
 
 
 class LeNet(nn.Module):
+    """
+    1998年：LeCun use BP train LeNet network，设备受限，CPU计算。
+    """
     def __init__(self):
         super(LeNet, self).__init__()
         self.conv1 = nn.Conv2d(in_channels=3, out_channels=16, kernel_size=5)

@@ -25,4 +25,3 @@ class LeNet(nn.Module):
         x = self.fc3(x)  # output(10)
 
         return x  # why no softmax here? cause the cross entropy loss used in training stage including logsoftmax
-

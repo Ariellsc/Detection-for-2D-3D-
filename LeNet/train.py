@@ -16,14 +16,14 @@ def main():
     )
 
     # 2.define train dataset
-    train_set = torchvision.datasets.CIFAR10(root='/data/dataPart2/liushichao/raw_data/cifar10', train=True,
+    train_set = torchvision.datasets.CIFAR10(root='/data/dataPart2/liushichao/raw_data/data_mine/cifar10', train=True,
                                              transform=transform, download=False)  # set download true when first using
 
     train_loader = torch.utils.data.DataLoader(dataset=train_set, batch_size=32,
                                                shuffle=True, num_workers=8)
 
     # 3.define val dataset
-    val_set = torchvision.datasets.CIFAR10(root='/data/dataPart2/liushichao/raw_data/cifar10', train=False,
+    val_set = torchvision.datasets.CIFAR10(root='/data/dataPart2/liushichao/raw_data/data_mine/cifar10', train=False,
                                            transform=transforms, download=False)  # set download true when first using
     val_loader = torch.utils.data.DataLoader(dataset=val_set, batch_size=3000,
                                              shuffle=False, num_workers=8)

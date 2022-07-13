@@ -13,14 +13,14 @@ def main():
 
     # 50000张训练图片
     # 第一次使用时要将download设置为True才会自动去下载数据集
-    train_set = torchvision.datasets.CIFAR10(root='/data/dataPart2/liushichao/raw_data/data_mine/cifar10', train=True,
+    train_set = torchvision.datasets.CIFAR10(root='../raw_data/data_mine/cifar10', train=True,
                                              download=False, transform=transform)
     train_loader = torch.utils.data.DataLoader(train_set, batch_size=36,
                                                shuffle=True, num_workers=0)
 
     # 10000张验证图片
     # 第一次使用时要将download设置为True才会自动去下载数据集
-    val_set = torchvision.datasets.CIFAR10(root='/data/dataPart2/liushichao/raw_data/data_mine/cifar10', train=False,
+    val_set = torchvision.datasets.CIFAR10(root='../raw_data/data_mine/cifar10', train=False,
                                            download=False, transform=transform)
     val_loader = torch.utils.data.DataLoader(val_set, batch_size=5000,
                                              shuffle=False, num_workers=0)

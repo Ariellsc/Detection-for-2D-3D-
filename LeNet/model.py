@@ -7,6 +7,8 @@ class LeNet(nn.Module):
     一般是定义一个类，比如此处定义的LeNet类，继承自父类nn.module，包含两个方法，init方法中定义需要使用到的网络结构，forward方法中定义反向传播过程。
     当我们实例化这个类之后，将参数传入这个实例化之后的类，就会按照这个forward方法进行正向传播过程。
     1998年：LeCun use BP train LeNet network，设备受限，CPU计算。
+    LeNet doc url: https://axon.cs.byu.edu/~martinez/classes/678/Papers/Convolution_nets.pdf 《Gradient-Based Learning Applied
+to Document Recognition》
     """
 
     def __init__(self):

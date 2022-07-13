@@ -12,3 +12,5 @@ ILSVRC 2012（ImageNet的子集，1000类）：
 过拟合：根本原因是特征维度过多，模型假设过于复杂，参数过多，训练数据过少，噪声过多，导致拟合的函数完美预测训练集而对新数据的
 测试集预测结果差。过度拟合训练数据，没有考虑到泛化能力。
 
+《ImageNet Classification with Deep Convolutional Neural Networks》
+http://www.cs.toronto.edu/~fritz/absps/imagenet.pdf

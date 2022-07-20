@@ -1,4 +1,4 @@
-GoogLeNet2014年由GoogLeNet团队提出。
+GoogLeNet2014年由GoogLeNet团队提出。https://arxiv.org/pdf/1409.4842.pdf 《Going deeper with convolutions》
 网络亮点：
 引入了Inception结构（融合不同尺度的特征信息）；
 使用1*1卷积核进行降维以及映射处理；

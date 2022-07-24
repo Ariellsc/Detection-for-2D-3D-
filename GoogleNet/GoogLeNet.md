@@ -1,7 +1,7 @@
 GoogLeNet2014年由GoogLeNet团队提出。https://arxiv.org/pdf/1409.4842.pdf 《Going deeper with convolutions》
 网络亮点：
 引入了Inception结构（融合不同尺度的特征信息）；
-使用1*1卷积核进行降维以及映射处理；
+使用1x1卷积核进行降维以及映射处理；
 添加两个辅助分类器帮助训练（AlexNet和VGG都只有一个输出层，GoogLeNet有三个输出层，其中一个主输出层，两个辅助分类层）；
 丢弃全连接层，使用平均池化层（大大减少模型参数）。
 ![img.png](materials/googlenet.png)

@@ -1,6 +1,3 @@
-LeNet doc url: https://axon.cs.byu.edu/~martinez/classes/678/Papers/Convolution_nets.pdf 《Gradient-Based Learning Applied
-to Document Recognition》
-
 Prior Historical Knowledge：
 CNN's Development:  
 1986年：Rumelhart and Hinton provided “Back Propagation” algorithm；  

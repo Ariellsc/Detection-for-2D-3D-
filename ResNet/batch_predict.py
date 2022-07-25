@@ -39,7 +39,7 @@ def main():
     assert os.path.exists(weights_path), f"file: '{weights_path}' dose not exist."
     model.load_state_dict(torch.load(weights_path, map_location=device))
 
-    # prediction
+    # prediction. 将多张图片打包成一个batch，送入模型进行一次性预测。
     model.eval()
     batch_size = 8  # 每次预测时将多少张图片打包成一个batch
     with torch.no_grad():

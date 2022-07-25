@@ -28,6 +28,9 @@ batch normalization详细细节参考：
 https://blog.csdn.net/qq_37541097/article/details/104434557（非常好）
 https://www.bilibili.com/video/av9770302?p=10
 
+ResNeXt:
+convolution ===> group convolution
+
 
 
 

@@ -49,7 +49,7 @@ class Bottleneck(nn.Module):
     expansion = 4  # 根据论文，r50 & r101 & r152，每个残差块中，第三个卷积层深度是前两个的4倍（256=64*4）
 
     def __init__(self, in_channel, out_channel, stride=1, downsample=None,
-                 groups=1, width_per_group=64):
+                 groups=1, width_per_group=64):  # the two param "groups", "width_per_group" are for resnext
         super(Bottleneck, self).__init__()
 
         width = int(out_channel * (width_per_group / 64.)) * groups
@@ -91,7 +91,9 @@ class Bottleneck(nn.Module):
 
 
 class ResNet(nn.Module):
-
+    """
+    note: the two param "groups", "width_per_group" are for resnext
+    """
     def __init__(self,
                  block,
                  blocks_num,
@@ -184,6 +186,7 @@ def resnet101(num_classes=1000, include_top=True):
 
 def resnext50_32x4d(num_classes=1000, include_top=True):
     # https://download.pytorch.org/models/resnext50_32x4d-7cdf4587.pth
+    # the two param "groups", "width_per_group" are for resnext
     groups = 32
     width_per_group = 4
     return ResNet(Bottleneck, [3, 4, 6, 3],
@@ -195,6 +198,7 @@ def resnext50_32x4d(num_classes=1000, include_top=True):
 
 def resnext101_32x8d(num_classes=1000, include_top=True):
     # https://download.pytorch.org/models/resnext101_32x8d-8ba56ff5.pth
+    # the two param "groups", "width_per_group" are for resnext
     groups = 32
     width_per_group = 8
     return ResNet(Bottleneck, [3, 4, 23, 3],

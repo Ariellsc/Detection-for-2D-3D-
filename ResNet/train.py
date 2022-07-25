@@ -9,6 +9,7 @@ from torchvision import transforms, datasets
 from tqdm import tqdm
 
 from model import resnet34
+# from model import resnext50_32x4d  # for resnext
 
 
 def main():
@@ -65,6 +66,7 @@ def main():
     assert os.path.exists(model_weight_path), "file {} does not exist.".format(model_weight_path)
     net.load_state_dict(torch.load(model_weight_path, map_location='cpu'))
     # for param in net.parameters():
+    #     # for resnext, 冻结所有的权重
     #     param.requires_grad = False
 
     # change fc layer structure

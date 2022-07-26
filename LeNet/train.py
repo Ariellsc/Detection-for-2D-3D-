@@ -32,7 +32,7 @@ def main():
 
     net = LeNet()
     # define loss_function; note that cross entropy loss function including logsoftmax loss and null loss,
-    # that's why we don't use softmax in our forward operation(see model.py).
+    # that's why we don't use softmax in our forward operation(see model_v2.py).
     loss_function = nn.CrossEntropyLoss()
     optimizer = optim.Adam(net.parameters(), lr=0.001)
 
